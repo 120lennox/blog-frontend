@@ -17,7 +17,7 @@ export default function RootLayout({
       <body
         className="mx-[90px]"
       >
-        
+       <NavBar /> 
         {children}
       </body>
     </html>
