@@ -6,7 +6,7 @@ export default function RecentPost(){
         <div>
             <div className="text-[24px] font-semibold my-[32px]">Recent blog posts</div>
             <div className="flex flex-row gap-4">
-                <div>
+                <div className="min-h-[432] flex flex-col space-y-5">
                     <div>
                         <Image
                             src="/Image_svg.svg"
@@ -15,8 +15,8 @@ export default function RecentPost(){
                             height={228}
                         />
                     </div>
-                    <div>Sunday, 1 Jan 2025</div>
-                    <div>Ux review presentation</div>
+                    <div className="text-[#6941C6] font-semibold text-[14px]">Sunday, 1 Jan 2025</div>
+                    <div className="font-semibold text-[24px]">Ux review presentation</div>
                     <div>How do you create compelling presentations that wow your colleagues and impress your managers?</div>
                     <div>
                         <div>Design</div>
