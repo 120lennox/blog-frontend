@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="mx-[90px] my-[20px] font-inter"
+        className="mx-[112] my-[20px] font-inter"
       >
        <NavBar /> 
         {children}

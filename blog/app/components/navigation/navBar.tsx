@@ -9,15 +9,15 @@ const moon = {
 }
 
 export default function NavBar(){
-    return <div>
-        <div className="flex flex-row justify-between">
-            <div>Your Name</div>
-            <div className="flex flex-row justify-between items-center space-x-[14px]">
-                <Link href='/'>Blog</Link>
-                <Link href='/'>Projects</Link>
-                <Link href='/'>About</Link>
-                <Link href='/'>Newsletter</Link>
-                <div className="bg-white py-4 px-2 h-[40px] w-[96px] flex items-center justify-center rounded-full">
+    return <div className="">
+        <div className="flex flex-row justify-between items-center duration-500 ease-in-out">
+            <div className="font-semibold">Your Name</div>
+            <div className="flex flex-row justify-between items-center space-x-[14px] transition-all duration-1000 ease-in-out">
+                <Link className="hover:font-semibold hover:underline hover:underline-offset-8 transition-all duration-300" href='/'>Blog</Link>
+                <Link className="hover:font-semibold hover:underline hover:underline-offset-8 " href='/'>Projects</Link>
+                <Link className="hover:font-semibold hover:underline hover:underline-offset-8" href='/'>About</Link>
+                <Link className="hover:font-semibold hover:underline hover:underline-offset-8" href='/'>Newsletter</Link>
+                <div className="bg-white py-4 px-2 h-[40px] w-[90px] flex items-center justify-center rounded-full">
                     <div className="flex gap-4">
                         <div className="rounded-full w-6 h-6 bg-black"></div>
                         {moon.icon}
