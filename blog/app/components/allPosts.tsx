@@ -3,7 +3,7 @@ import { Arrow } from "./navigation/icons";
 
 export default function AllPosts(){
     return <div className="my-10">
-        <div>
+        <div className="grid grid-cols-3 grid-rows-3 gap-4">
             <div className="font-semibold text-[24px]">All blog posts</div>
             <div className="my-10 w-[384]">
                 <div className="flex flex-col space-y-5">
