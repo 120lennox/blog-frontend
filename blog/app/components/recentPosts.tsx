@@ -76,18 +76,18 @@ export default function RecentPost(){
                         
                     />
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/2 flex flex-col space-y-2">
                     <div className="text-[#6941C6] font-semibold text-[14px]">Sunday, 1 Jan 2025</div>
-                    <div>
-                        <div>Grid system for better Design User Interface</div>
+                    <div className="flex flex-row justify-between items-center">
+                        <div className="font-semibold text-[24px]">Grid system for better Design User Interface</div>
                         <div>
                             {Arrow.icon}
                         </div>
                     </div>
                     <div>A grid system is a design tool used to arrange content on a webpage. It is a series of vertical and horizontal lines that create a matrix of intersecting points, which can be used to align and organize page elements. Grid systems are used to create a consistent look and feel across a website, and can help to make the layout more visually appealing and easier to navigate.</div>
-                    <div>
-                        <div>Design</div>
-                        <div>Interface</div>
+                    <div className="flex flex-row space-x-2">
+                        <div className="bg-white text-[#6941C6] rounded-full px-2 py-1 font-medium ">Design</div>
+                        <div className="bg-white text-[#C11574] rounded-full px-2 py-1 font-medium ">Interface</div>
                     </div>
                 </div>
             </div>
