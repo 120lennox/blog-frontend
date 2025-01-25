@@ -2,7 +2,7 @@ import AllPosts from "./components/allPosts";
 import RecentPost from "./components/recentPosts";
 
 export default function Home() {
-  return <div className="flex flex-col">
+  return <div className="flex flex-col justify-between space-y-10">
         <div className="my-[50px]">
           <div className="w-full h-[295] overflow-hidden border border-r-[#090D1F] border-l-[#090D1F] flex items-center">
             <div className="flex flex-row space-x-8 justify-center items-center">
@@ -14,7 +14,7 @@ export default function Home() {
         <div>
           <RecentPost />
         </div>
-        <div>
+        <div className="">
           <AllPosts />
         </div>
   </div>
