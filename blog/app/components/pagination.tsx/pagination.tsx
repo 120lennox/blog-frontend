@@ -7,7 +7,7 @@ export default function Pagination(){
                 {leftArrow.icon}
                 <div>Previous</div>
             </div>
-            <div className="flex flex-row space-x-5 font-semibold">
+            <div className="flex flex-row space-x-8 font-semibold">
                 <div>1</div>
                 <div>2</div>
                 <div>3</div>
