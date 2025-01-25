@@ -17,7 +17,7 @@ export default function NavBar(){
                 <Link className="hover:font-semibold hover:underline hover:underline-offset-8 " href='/'>Projects</Link>
                 <Link className="hover:font-semibold hover:underline hover:underline-offset-8" href='/'>About</Link>
                 <Link className="hover:font-semibold hover:underline hover:underline-offset-8" href='/'>Newsletter</Link>
-                <div className="bg-white py-4 px-2 h-[40px] w-[90px] flex items-center justify-center rounded-full">
+                <div className="bg-white py-4 px-2 h-[40] w-[90] flex items-center justify-center rounded-full">
                     <div className="flex gap-4">
                         <div className="rounded-full w-6 h-6 bg-black"></div>
                         {moon.icon}
