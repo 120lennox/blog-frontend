@@ -1,4 +1,5 @@
 import AllPosts from "./components/allPosts";
+import Pagination from "./components/pagination.tsx/pagination";
 import RecentPost from "./components/recentPosts";
 
 export default function Home() {
@@ -20,6 +21,8 @@ export default function Home() {
         <div>
           <hr />
         </div>
-        
+        <div>
+          <Pagination />
+        </div>
   </div>
 }
