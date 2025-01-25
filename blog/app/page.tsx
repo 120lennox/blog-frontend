@@ -17,5 +17,9 @@ export default function Home() {
         <div className="">
           <AllPosts />
         </div>
+        <div>
+          <hr />
+        </div>
+        
   </div>
 }
