@@ -6,7 +6,7 @@ export default function RecentPost(){
         <div>
             <div className="text-[24px] font-semibold my-[32px]">Recent blog posts</div>
             <div className="flex flex-row gap-8 items-center">
-                <div className="min-h-[432] flex flex-col mb-4">
+                <div className="min-h-[432] flex flex-col space-y-4">
                     <div>
                         <Image
                             src="/Image_svg.svg"
@@ -24,7 +24,7 @@ export default function RecentPost(){
                         <div className="bg-white text-[#C11574] rounded-full px-2 py-1 font-medium ">Presentation</div>
                     </div>
                 </div>
-                <div className="min-h-[432] flex flex-col items-center">
+                <div className="min-h-[432] flex flex-col space-y-8 items-center">
                     <div className="flex flex-row space-x-4">
                         <div className="">
                             <Image 
@@ -34,7 +34,7 @@ export default function RecentPost(){
                                 height={432}
                             />
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col space-y-4">
                             <div className="text-[#6941C6] font-semibold text-[14px]">Sunday, 1 Jan 2025</div>
                             <div className="font-semibold text-[18px]">Migrating to Linear 101</div>
                             <div className="font-medium text-[16]">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...</div>
@@ -45,7 +45,7 @@ export default function RecentPost(){
                         </div>
                     </div>
                     <div className="flex flex-row space-x-4 items-center">
-                        <div>
+                        <div className="">
                             <Image 
                                 src="/card_svg.svg"
                                 alt="test 2"
@@ -53,7 +53,7 @@ export default function RecentPost(){
                                 height={200}
                             />
                         </div>
-                        <div className="flex flex-col">
+                        <div className="flex flex-col space-y-4">
                             <div className="text-[#6941C6] font-semibold text-[14px]">Sunday, 1 Jan 2025</div>
                             <div className="font-semibold text-[18px]">Migrating to Linear 101</div>
                             <div className="font-medium text-[16]">Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get...</div>
