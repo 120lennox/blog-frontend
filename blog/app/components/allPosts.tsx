@@ -26,8 +26,8 @@ export default function AllPosts(){
                         </div>
                         <div className="flex flex-row space-x-2">
                             <div className="bg-white text-[#6941C6] rounded-full px-2 py-1">Leadership</div>
-                            <div className="bg-white text-[#6941C6] rounded-full px-2 py-1">Management</div>
-                            <div className="bg-white text-[#6941C6] rounded-full px-2 py-1">Presentation</div>
+                            <div className="bg-white text-[#363F72] rounded-full px-2 py-1">Management</div>
+                            <div className="bg-white text-[#C11574] rounded-full px-2 py-1">Presentation</div>
                         </div>
                     </div>
                 </div>
