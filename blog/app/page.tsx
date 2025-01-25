@@ -1,3 +1,4 @@
+import AllPosts from "./components/allPosts";
 import RecentPost from "./components/recentPosts";
 
 export default function Home() {
@@ -12,6 +13,9 @@ export default function Home() {
         </div>
         <div>
           <RecentPost />
+        </div>
+        <div>
+          <AllPosts />
         </div>
   </div>
 }
