@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image"
+import { google } from "../../navigation/icons"
 
 
 export default function Login(){
@@ -21,13 +22,15 @@ export default function Login(){
                         <div>
                             <button className="bg-white text-[#090D1F] w-1/2 rounded-full py-1 ">Login</button>
                         </div>
-                        <div>
-                            <button className="bg-white text-[#090D1F] w-1/2 rounded-full py-1">Login with google</button>
+                        <div className="bg-white text-[#090D1F] w-1/2 rounded-full py-1 flex flex-row justify-center items-center">
+                            {google.icon}
+                            <button className="text-[#090D1F] w-1/2 py-1 items-center">Login with google</button>
                         </div>
+
                     </form>
                 </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-1/2 mt-10">
                 <Image
                     src="/backgroundLogin.svg"
                     alt="background image"
