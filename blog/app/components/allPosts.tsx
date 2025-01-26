@@ -4,7 +4,7 @@ import { getPosts } from "../lib/data";
 
 
 export default function AllPosts(){
-    const posts = getPosts();
+    // const posts = getPosts();
     
     return <div className="my-10">
         <div className="grid grid-cols-3 grid-rows-3 gap-4">
