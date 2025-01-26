@@ -25,7 +25,7 @@ export default function AllPosts(){
                             <div className="font-semibold text-[24]">Bill Walsh leadership lessons</div>
                             <div>{Arrow.icon}</div>
                         </div>
-                        <div className="font-medium text-[16] ">
+                        <div className="font-medium text-[16px] ">
                             Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?
                         </div>
                         <div className="flex flex-row space-x-2">
