@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { Arrow } from "./navigation/icons";
+import { getPosts } from "../lib/data";
+
 
 export default function AllPosts(){
+    const posts = getPosts();
+    
     return <div className="my-10">
         <div className="grid grid-cols-3 grid-rows-3 gap-4">
             <div className="font-semibold text-[24px]">All blog posts</div>

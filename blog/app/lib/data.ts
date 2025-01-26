@@ -1,5 +1,12 @@
 import axios from "axios"
 
-export const posts = async(){
-    const response = axios.get("http://127.0.0.1:8000/api/")
+export const getPosts = async()=>{
+    try{
+        const response = await axios.get('http://127.0.0.1:8000/api/')
+        const data = response.data
+        console.log(data)
+        return data
+    }catch(error){
+        console.error("error", error)
+    }
 }
