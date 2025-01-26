@@ -25,8 +25,5 @@ export default function Home() {
         <div>
           <Pagination />
         </div>
-        <div>
-          <Footer />
-        </div>
   </div>
 }
