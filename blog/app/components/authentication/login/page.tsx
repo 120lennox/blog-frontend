@@ -1,3 +1,8 @@
+'use client'
+
+import Image from "next/image"
+
+
 export default function Login(){
     return <div>
         <div>
@@ -23,7 +28,12 @@ export default function Login(){
                 </div>
             </div>
             <div>
-                
+                <Image
+                    src="/backgroundLogin.svg"
+                    alt="background image"
+                    width={696}
+                    height={801}
+                />
             </div>
         </div>
     </div>
