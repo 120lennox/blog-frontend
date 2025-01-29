@@ -11,3 +11,4 @@ export const getPosts = async()=>{
     }
 }
 
+//fetch user details 
