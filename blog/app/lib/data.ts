@@ -12,3 +12,12 @@ export const getPosts = async()=>{
 }
 
 //fetch user details 
+export const getUser = async (id:number) =>{
+    try{
+        const response = await axios.get(`http://127.0.0.1:8000/api/users/${id}`)
+        const data = response.data
+        console.log(data)
+    }catch(error){
+        console.error("error", error)
+    }
+}
