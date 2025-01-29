@@ -1,6 +1,7 @@
-import AllPosts from "../allPosts";
-import Pagination from "../pagination.tsx/pagination";
-import RecentPost from "../recentPosts";
+import AllPosts from "../components/allPosts"
+import Pagination from "../components/pagination.tsx/pagination"
+import RecentPost from "../components/recentPosts"
+
 
 export default function Home() {
   return <div className="flex flex-col justify-between space-y-10">

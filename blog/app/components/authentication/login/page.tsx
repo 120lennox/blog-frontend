@@ -52,7 +52,7 @@ export default function Login(){
 
                 if(response.status === 200){
                     Cookies.set('authToekn', response.data.key, {expires: 2})
-                    router.push('/components/landing')
+                    router.push('/landing')
                 }
             }catch(error){
                 setLoginError('Login failed')

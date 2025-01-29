@@ -9,6 +9,7 @@ const moon = {
 }
 
 export default function NavBar(){
+    
     return <div className="">
         <div className="flex flex-row justify-between items-center duration-500 ease-in-out">
             <div className="font-semibold">Your Name</div>
