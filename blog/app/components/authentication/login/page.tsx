@@ -5,6 +5,7 @@ import { google } from "../../navigation/icons"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import axios from "axios"
+import Cookies from "js-cookie"
 
 
 
@@ -38,20 +39,28 @@ export default function Login(){
             isValid = false
         }
 
-        if (isValid && !emailValidation(email)){
+        if (isValid){
             const userdata = {
                 username:email,
                 password:password
             }
 
-            //send post request
+            //send post request to http://127.0.0.1:8000/api/
             try{
-                const response = await axios.post('http://127.0.0.1:8000/api-auth/login/?next=/api/', userdata)
+                const response = await axios.post('http://127.0.0.1:8000/api/dj-rest-auth/login', userdata)
                 console.log(response.data)
+
+                if(response.status === 200){
+                    Cookies.set('authToekn', response.data.key, {expires: 2})
+                    router.push('/components/landing')
+                }
             }catch(error){
                 setLoginError('Login failed')
             }
 
+        }
+        else{
+            console.log('failed')
         }
 
     }

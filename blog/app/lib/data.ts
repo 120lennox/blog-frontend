@@ -10,3 +10,4 @@ export const getPosts = async()=>{
         console.error("error", error)
     }
 }
+
