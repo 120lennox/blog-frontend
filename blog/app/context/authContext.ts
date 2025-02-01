@@ -2,12 +2,21 @@
  * AuthProvider shares the authentication state in all the pages
  */
 
-import { createContext, useState, useContext, useEffect } from 'react';
+import { createContext, useState, useContext, useEffect, Children } from 'react';
 import Cookies from 'js-cookie';
-import axios from 'axios';
 import { getUser } from '@/app/lib/data';
 
-const AuthContext = createContext(null)
+interface AuthContextType{
+    user: string
+    isAuntenticated: boolean
+    checkAuth: () => Promise<void>;   
+}
+
+const AuthContext = createContext<AuthContextType>({
+    user: null,
+    isAuthenticated: false,
+    checkAuth: async () => {},
+})
 
 export const AuthProvider = ({ children }) =>{
     const [user, setUser] = useState(null)
@@ -30,4 +39,12 @@ export const AuthProvider = ({ children }) =>{
             setUser(null)
         } 
     }
+
+    useEffect(() =>{
+        checkAuth()
+    }, [])
+
+    return (
+       
+    );
 }
