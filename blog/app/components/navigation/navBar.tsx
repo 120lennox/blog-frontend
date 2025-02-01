@@ -1,4 +1,10 @@
+'use client'
+
+import axios from "axios"
 import Link from "next/link"
+import { useEffect, useState } from "react"
+import Cookies from "js-cookie"
+import { getUser } from "@/app/lib/data"
 
 const moon = {
     src: "/images/moon.png",
@@ -9,6 +15,23 @@ const moon = {
 }
 
 export default function NavBar(){
+    const [user, setUser] = useState(null)
+    const [isAuthenticated, setIsAuthenticated] = useState(false)
+
+    useEffect(()=>{
+        checkAuth()
+    }, [])
+
+    const checkAuth = async () => {
+        const token = Cookies.get('authToken')
+
+        if (token){
+            setIsAuthenticated(true)
+
+            // fetch user
+            const user = await getUser(token)
+        }
+    }
     
     return <div className="">
         <div className="flex flex-row justify-between items-center duration-500 ease-in-out">

@@ -51,7 +51,7 @@ export default function Login(){
                 console.log(response.data)
 
                 if(response.status === 200){
-                    Cookies.set('authToekn', response.data.key, {expires: 2})
+                    Cookies.set('authToken', response.data.key, {expires: 2})
                     router.push('/landing')
                 }
             }catch(error){

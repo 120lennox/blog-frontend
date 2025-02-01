@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+// import "./globals.css";
 import NavBar from "../components/navigation/navBar";
 import Footer from "../components/footer";
 
@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        // className="mx-[112] my-[20px] font-inter"
+        className="mx-[112] my-[20px] font-inter"
       >
        <NavBar /> 
         {children}

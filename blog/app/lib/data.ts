@@ -1,5 +1,6 @@
 import axios from "axios"
 
+
 export const getPosts = async()=>{
     try{
         const response = await axios.get('http://127.0.0.1:8000/api/')
@@ -12,9 +13,13 @@ export const getPosts = async()=>{
 }
 
 //fetch user details 
-export const getUser = async (id:number) =>{
+export const getUser = async (token:string) =>{
     try{
-        const response = await axios.get(`http://127.0.0.1:8000/api/users/${id}`)
+        const response = await axios.get(`http://127.0.0.1:8000/api/users/`, {
+            headers: {
+                'authorization': `Token ${token}`
+            }
+        })
         const data = response.data
         console.log(data)
     }catch(error){
