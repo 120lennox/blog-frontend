@@ -20,8 +20,9 @@ export const getUser = async (token:string) =>{
                 'authorization': `Token ${token}`
             }
         })
-        const data = response.data
-        console.log(data)
+        console.log(response.data)
+        return response
+        
     }catch(error){
         console.error("error", error)
     }
