@@ -25,5 +25,6 @@ export const getUser = async (token:string) =>{
         
     }catch(error){
         console.error("error", error)
+        return error
     }
 }

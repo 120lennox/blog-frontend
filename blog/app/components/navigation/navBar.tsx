@@ -30,7 +30,7 @@ export default function NavBar(){
 
             // fetch user
             const user = await getUser(token)
-            setUser(user.data)
+            
         }
     }
     
